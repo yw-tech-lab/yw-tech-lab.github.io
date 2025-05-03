@@ -8,7 +8,7 @@ const Banner = () => {
           <h1 className="text-4xl sm:text-6xl font-abril mb-6">Tech Lab Collective</h1>
           <p className="text-xl font-comfortaa mb-8 max-w-2xl mx-auto">
             We partner with businesses and nonprofits to craft powerful identities, build beautiful
-            websites, and rally support for bold missions.
+            websites, and support bold missions.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a>Learn More</a>

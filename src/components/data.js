@@ -22,6 +22,7 @@ const data = [
     description: 'Build modern, responsive websites that deliver exceptional user experiences.',
     imageUrl:
       'https://rno1.com/media/pages/work/prive/c0123bac64-1671639293/prive-thumbnail-landscape.jpg',
+    color: '#8221a8',
   },
 ];
 export default data;
