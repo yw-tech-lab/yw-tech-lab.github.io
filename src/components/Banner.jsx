@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 const Banner = () => {
   return (
     <div className="bg-background-50">
@@ -10,9 +10,9 @@ const Banner = () => {
             We partner with businesses and nonprofits to build beautiful, functional websites that
             support bold missions.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a>Learn More</a>
-          </div>
+          <Link to="/case-studies/all" className="flex flex-col sm:flex-row gap-4 justify-center">
+            Case Studies
+          </Link>
         </div>
       </div>
     </div>

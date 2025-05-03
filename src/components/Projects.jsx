@@ -9,6 +9,7 @@ const Projects = () => {
         {data.map((card, index) => (
           <div key={index} className={`${index % 2 === 0 ? 'md:mt-12 lg:mt-24' : ''}`}>
             <HoverCard
+              id={card.id}
               title={card.title}
               imageUrl={card.imageUrl}
               color={card.color}
@@ -16,12 +17,12 @@ const Projects = () => {
               index={index}
             >
               <>
-              <h3 className="font-comfortaa mb-2 text-xl font-bold text-gray-900 transition-colors duration-300">
-                {card.title}
-              </h3>
-              <p className="text-gray-600 transition-colors duration-300 group-hover:text-gray-800">
-                {card.description}
-              </p>
+                <h3 className="font-comfortaa mb-2 text-xl font-bold text-gray-900 transition-colors duration-300">
+                  {card.title}
+                </h3>
+                <p className="text-gray-600 transition-colors duration-300 group-hover:text-gray-800">
+                  {card.description}
+                </p>
               </>
             </HoverCard>
           </div>
