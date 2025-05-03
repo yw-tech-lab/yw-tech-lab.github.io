@@ -1,40 +1,65 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
-const HoverCard = ({ title, description, imageUrl, color }) => {
+const HoverCard = ({ title, children, imageUrl, color, index, fit = 'contain' }) => {
+  const [isVisible, setIsVisible] = useState(false);
+  const cardRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        setIsVisible(true);
+        observer.unobserve(entry.target);
+      }
+    });
+
+    if (cardRef.current) {
+      observer.observe(cardRef.current);
+    }
+
+    return () => {
+      if (cardRef.current) {
+        observer.unobserve(cardRef.current);
+      }
+    };
+  }, []);
+
   return (
-    <div className="group relative overflow-hidden transition-all duration-500">
+    <div
+      ref={cardRef}
+      className={`group relative overflow-hidden transition-all duration-500 ${
+        isVisible ? 'animate-slide-up' : ''
+      }`}
+    >
       {/* Image container with hover zoom effect */}
       <div
-        className="relative h-80 overflow-hidden"
-        style={color ? { backgroundColor: color, padding: '10px' } : {}}
+        className="relative h-80 overflow-hidden flex items-center justify-center"
+        style={color ? { backgroundColor: color, padding: '20px' } : {}}
       >
         {imageUrl && (
           <img
             src={imageUrl}
             alt={title}
-            className="h-full w-full object-contain transition-transform duration-700 group-hover:scale-110"
+            className="h-full w-full transition-transform duration-700 group-hover:scale-110"
+            style={{ objectFit: fit ? fit : 'cover' }}
           />
         )}
-        {/* Gradient overlay */}
-        {/* <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" /> */}
+
+        {!imageUrl && (
+          <h2 className="text-4xl font-abril text-center duration-700 group-hover:scale-110">
+            {title}
+          </h2>
+        )}
       </div>
 
       {/* Content container */}
       <div className="pt-6">
-        <h3 className="font-comfortaa mb-2 text-xl font-bold text-gray-900 transition-colors duration-300 group-hover:text-primary-600">
-          {title}
-        </h3>
-        <p className="text-gray-600 transition-colors duration-300 group-hover:text-gray-800">
-          {description}
-        </p>
+        {children}
 
         {/* Hover arrow indicator */}
         <div className="mt-4 flex items-center">
-          <span className="text-primary-600 transition-all duration-300 group-hover:mr-2">
-            Learn more
-          </span>
+          <span className="mr-2 transition-all duration-300 group-hover:mr-2">Learn more</span>
           <svg
-            className="h-5 w-5 text-primary-600 transition-transform duration-300 group-hover:translate-x-1"
+            className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"

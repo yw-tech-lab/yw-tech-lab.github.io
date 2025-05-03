@@ -9,20 +9,21 @@ const data = [
     title: 'The AUX',
     description: 'Build modern, responsive websites that deliver exceptional user experiences.',
     imageUrl: '/images/aux.jpg',
+    fit: 'cover',
   },
   {
     title: 'Embrace Your Crown',
     description: 'Build modern, responsive websites that deliver exceptional user experiences.',
-    imageUrl:
-      'https://rno1.com/media/pages/work/takeup-ai/8da72056fb-1646240653/takeup-thumbnail-landscape.jpg',
-    color: '#ead151',
+    // imageUrl: '/images/eyc4.png',
+    fit: 'cover',
+    color: '#f1ce71',
   },
-  {
-    title: 'Answer the Moment',
-    description: 'Build modern, responsive websites that deliver exceptional user experiences.',
-    imageUrl:
-      'https://rno1.com/media/pages/work/prive/c0123bac64-1671639293/prive-thumbnail-landscape.jpg',
-    color: '#8221a8',
-  },
+  // {
+  //   title: 'Answer the Moment',
+  //   description: 'Build modern, responsive websites that deliver exceptional user experiences.',
+  //   imageUrl: '/images/atm1.png',
+  //   // color: '#f1ac7e',
+  //   fit: 'cover',
+  // },
 ];
 export default data;

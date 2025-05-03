@@ -23,7 +23,7 @@ jobs:
       - name: Build
         run: npm run build
         env:
-          VITE_BASE_URL: '/' # Replace with your repo name
+          VITE_BASE_URL: '/' # Root domain deployment
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3

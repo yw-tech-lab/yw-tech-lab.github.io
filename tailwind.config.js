@@ -58,10 +58,15 @@ export default {
           '50%': { transform: 'scale(1.5)', opacity: '0.5' },
           '100%': { transform: 'scale(2)', opacity: '0' },
         },
+        slideUp: {
+          '0%': { transform: 'translateY(80px)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
+        },
       },
       animation: {
         wave: 'wave 1.5s ease-out infinite',
         'wave-delayed': 'wave 1.5s ease-out 0.75s infinite',
+        'slide-up': 'slideUp 0.9s ease-out forwards',
       },
     },
   },
