@@ -3,7 +3,7 @@ const data = [
     id: 'cne',
     title: 'Childcare Network of Evanston',
     description: 'Create a powerful digital presence that resonates with your audience.',
-    imageUrl: '/images/cne-removebg-preview.png',
+    imageUrl: './images/cne-removebg-preview.png',
     color: '#54b2dd',
     details: {
       overview:
@@ -31,7 +31,7 @@ const data = [
     id: 'aux',
     title: 'The AUX',
     description: 'Build modern, responsive websites that deliver exceptional user experiences.',
-    imageUrl: '/images/aux.jpg',
+    imageUrl: './images/aux.jpg',
     fit: 'cover',
     details: {
       overview:
@@ -59,7 +59,7 @@ const data = [
     id: 'eyc',
     title: 'Embrace Your Crown',
     description: 'Build modern, responsive websites that deliver exceptional user experiences.',
-    // imageUrl: '/images/eyc4.png',
+    // imageUrl: './images/eyc4.png',
     fit: 'cover',
     color: '#f1ce71',
     details: {
