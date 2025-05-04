@@ -2,7 +2,6 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import caseStudies from '../components/data.js';
 import Projects from '../components/Projects';
-import { Link } from 'react-router-dom';
 
 const CaseStudyDetail = () => {
   const { id } = useParams();
