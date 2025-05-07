@@ -1,37 +1,10 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
-const HoverCard = ({ id, title, children, imageUrl, color, index, fit = 'contain' }) => {
-  const [isVisible, setIsVisible] = useState(false);
-  const cardRef = useRef(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(([entry]) => {
-      if (entry.isIntersecting) {
-        setIsVisible(true);
-        observer.unobserve(entry.target);
-      }
-    });
-
-    if (cardRef.current) {
-      observer.observe(cardRef.current);
-    }
-
-    return () => {
-      if (cardRef.current) {
-        observer.unobserve(cardRef.current);
-      }
-    };
-  }, []);
-
+const HoverCard = ({ id, title, children, imageUrl, color, fit = 'contain' }) => {
   return (
     <Link to={`/case-studies/${id}`}>
-      <div
-        ref={cardRef}
-        className={`group relative overflow-hidden transition-all duration-500 ${
-          isVisible ? 'animate-slide-up' : ''
-        }`}
-      >
+      <div className="group relative overflow-hidden transition-all duration-500">
         {/* Image container with hover zoom effect */}
         <div
           className="relative h-80 overflow-hidden flex items-center justify-center"

@@ -4,6 +4,8 @@ import Projects from './components/Projects';
 import Banner from './components/Banner';
 import CaseStudyDetail from './pages/CaseStudyDetail';
 import Nav from './components/Nav';
+import AnimatedBox from './components/AnimatedBox';
+
 function App() {
   return (
     <Router>
