@@ -9,7 +9,7 @@ export default function Nav() {
           <div className="flex">
             <div className="flex-shrink-0 flex items-center">
               <Link to="/" className="text-2xl font-abril">
-                The Tech Collective
+                Your Name
               </Link>
             </div>
           </div>

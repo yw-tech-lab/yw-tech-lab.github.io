@@ -1,10 +1,10 @@
 import React from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Projects from './components/Projects';
+import About from './components/About';
 import Banner from './components/Banner';
 import CaseStudyDetail from './pages/CaseStudyDetail';
 import Nav from './components/Nav';
-import AnimatedBox from './components/AnimatedBox';
 
 function App() {
   return (
@@ -16,6 +16,7 @@ function App() {
             element={
               <>
                 <Banner />
+                <About />
                 <Projects />
               </>
             }

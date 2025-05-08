@@ -2,12 +2,12 @@ import React from 'react';
 import HoverCard from './HoverCard';
 import data from './data';
 import { motion } from 'framer-motion';
-import AnimatedText from './AnimatedText';
+// import AnimatedText from './AnimatedText';
 
 const Projects = () => {
   return (
     <div className="max-w-6xl mt-12 mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <AnimatedText text="Our Work" className="text-6xl font-abril mb-12" />
+      <h2 className="text-6xl font-abril mb-12">Projects</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-16">
         {data.map((card, index) => (
           <div key={index} className={`${index % 2 === 0 ? 'md:mt-12 lg:mt-24' : ''}`}>
