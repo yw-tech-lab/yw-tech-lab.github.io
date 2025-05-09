@@ -28,11 +28,10 @@
 .iphone {
   max-width: var(--mobile-width);
   aspect-ratio: 1 / 1.8;
-  border-width: 0.7vw;
+  border-width: 7px;
   border-radius: 20px;
   z-index: 200;
   max-height: 90vh;
-  /* border-width: 15px; */
 }
 
 .ipad {

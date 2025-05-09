@@ -14,9 +14,9 @@ const CaseStudyDetail = () => {
 
   return (
     <>
-      <div className="bg-[#185977]">
+      <div className="bg-[#185977] py-12">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <section className="grid grid-cols-4 gap-4 justify-center">
+          <section className="grid grid-cols-4 gap-12 justify-center items-center">
             <div className="col-span-2">
               <h2 className="text-3xl font-abril mb-6 text-white">Homepage</h2>
               <p className="text-lg text-white">
@@ -28,15 +28,19 @@ const CaseStudyDetail = () => {
               </p>
             </div>
             <div className="col-span-2 flex gap-5">
-              <Device width="250px" imageUrl="/images/screenshots/mobile/homepage.png" />
-              <Device width="250px" imageUrl="/images/screenshots/mobile/ccap.png" />
+              <Device width="200px" imageUrl="/images/screenshots/mobile/homepage.png" />
+              <Device
+                width="200px"
+                className="top-[-30px]"
+                imageUrl="/images/screenshots/mobile/ccap.png"
+              />
             </div>
           </section>
         </div>
       </div>
-      <div className="bg-[#05aaad]">
+      <div className="bg-[#05aaad] py-12">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <section className="grid grid-cols-4 gap-4 justify-center">
+          <section className="grid grid-cols-4 gap-12 justify-center items-center">
             <div className="col-span-2">
               <h2 className="text-3xl font-abril mb-6 text-gray-900">Impact</h2>
               <p className="text-lg text-gray-900">
@@ -47,8 +51,12 @@ const CaseStudyDetail = () => {
               </p>
             </div>
             <div className="col-span-2 flex gap-5">
-              <Device width="250px" imageUrl="/images/screenshots/mobile/impact.png" />
-              <Device width="250px" imageUrl="/images/screenshots/mobile/programs-overview.png" />
+              <Device width="200px" imageUrl="/images/screenshots/mobile/impact.png" />
+              <Device
+                width="200px"
+                className="top-[-30px]"
+                imageUrl="/images/screenshots/mobile/programs-overview.png"
+              />
             </div>
           </section>
         </div>
