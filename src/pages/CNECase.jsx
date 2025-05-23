@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import caseStudies from '../components/data.js';
-import Projects from '../components/Projects';
+import Projects from '../components/Projects.jsx';
 
 const CaseStudyDetail = () => {
   const { id } = useParams();
