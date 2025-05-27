@@ -4,7 +4,7 @@ import caseStudies from '../components/data.js';
 import Device from '../components/Device';
 import Nav from '../components/Nav';
 import Panel from '../components/Panel';
-
+import Phone from '../components/Phone';
 const CaseStudyDetail = () => {
   const { id } = useParams();
   const study = caseStudies.find((study) => study.id === id);
@@ -31,6 +31,7 @@ const CaseStudyDetail = () => {
 
         {/* Right column */}
         <div className="col-span-6 flex gap-5">
+          {/* <Phone /> */}
           <Device width="200px" imageUrl="/images/screenshots/mobile/homepage.png" />
           <Device
             width="200px"
@@ -39,7 +40,7 @@ const CaseStudyDetail = () => {
           />
         </div>
       </Panel>
-      <Panel bgColor="bg-[#05aaad]">
+      <Panel style={{ backgroundImage: 'linear-gradient(90deg, #bce2f6, #e8def1)' }}>
         {/* Left column */}
         <div className="col-span-6">
           <h2 className="text-3xl font-abril mb-6 text-gray-900">Impact</h2>
@@ -59,6 +60,21 @@ const CaseStudyDetail = () => {
             className="top-[-30px]"
             imageUrl="/images/screenshots/mobile/programs-overview.png"
           />
+        </div>
+      </Panel>
+      <Panel
+        bgColor="bg-[#05aaad]"
+        style={{ backgroundImage: 'linear-gradient(90deg, #bce2f6, #e8def1)' }}
+      >
+        <div className="col-span-8 col-start-3">
+          <h2 className="text-3xl font-abril mb-6 text-gray-900">Programs</h2>
+          <p className="text-lg text-gray-900 mb-12">
+            To help parents and caregivers understand the importance of early childhood education,
+            we created a simple program overview page, organized by age group. This page provides a
+            clear and accessible explanation of CNE's various programs, including home visits,
+            developmental screenings, childcare providers and supports, and more.
+          </p>
+          <img className="w-full" src="/images/screenshots/desktop/programs.png" alt="Programs" />
         </div>
       </Panel>
     </>

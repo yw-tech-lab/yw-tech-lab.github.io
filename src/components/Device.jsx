@@ -1,7 +1,7 @@
 import React, { useRef, useState, useEffect } from 'react';
 import './Device.css';
 
-const Device = ({ imageUrl, width, className = '' }) => {
+const Device = ({ imageUrl, width, className = '', deviceType = 'iphone' }) => {
   const [isDragging, setIsDragging] = useState(false);
   const [isHandleDragging, setIsHandleDragging] = useState(false);
   const [startY, setStartY] = useState(0);
@@ -130,7 +130,7 @@ const Device = ({ imageUrl, width, className = '' }) => {
   }, []);
 
   return (
-    <figure className={`${className} iphone`} ref={containerRef} style={{ width: width }}>
+    <figure className={`${className} ${deviceType}`} ref={containerRef} style={{ width: width }}>
       <img
         ref={screenshotRef}
         src={imageUrl}

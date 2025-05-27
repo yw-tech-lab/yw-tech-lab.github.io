@@ -10,6 +10,9 @@
     all 0.1s linear,
     line-height 0s linear;
   overflow: hidden;
+  box-shadow:
+    0 0.5em 2em 0.2em rgba(0, 0, 0, 0.33),
+    0 0 0 0.5px #000 inset;
 }
 
 .iphone:hover,
