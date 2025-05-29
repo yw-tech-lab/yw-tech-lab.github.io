@@ -8,12 +8,12 @@ export default function EYC() {
       <Nav />
 
       {/* Section 1 */}
-      <section className="bg-[#185977]">
+      <section className="bg-[#f1ce71]">
         <div className="panel two-column-layout">
           {/* Left column */}
           <div>
-            <h2 className="mb-6 text-white">Embrace Your Crown</h2>
-            <p className="text-white">EYC text goes here...</p>
+            <h2 className="mb-6">Embrace Your Crown</h2>
+            <p>EYC text goes here...</p>
           </div>
 
           {/* Right column */}

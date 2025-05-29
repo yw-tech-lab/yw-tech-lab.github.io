@@ -85,6 +85,7 @@ export default function Tips() {
           done and incorporate the text, notes, and images you've already written:
         </p>
         <ul>
+          <li>Use "I" statements and strong action verbs for the work that you did.</li>
           <li>
             <a
               className="link-highlight"

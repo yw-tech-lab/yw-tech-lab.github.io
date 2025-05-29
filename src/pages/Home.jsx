@@ -21,11 +21,12 @@ export default function Home() {
       <div className="panel">
         <h2>About Me</h2>
         <p className="body-text-large">
-          Coming from a background in customer service, I've always cared about helping people and
-          making their experience better. That's what led me to front-end development – where I can
-          use code to solve problems and improve the way people interact with technology. I'm still
-          early in my journey, but I'm excited to keep learning and building tools that make things
-          simpler, smoother, and more enjoyable.
+          Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae
+          pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu
+          aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
+          Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class
+          aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos. Lorem
+          ipsum dolor sit amet consectetur adipiscing elit.
         </p>
       </div>
 

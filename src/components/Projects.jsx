@@ -1,13 +1,39 @@
 import React from 'react';
 import HoverCard from './HoverCard';
-import data from './data';
+
+const projects = [
+  {
+    id: 'cne',
+    title: 'Childcare Network of Evanston',
+    description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.',
+    imageUrl: './images/cne/cne-removebg-preview.png',
+    color: '#54b2dd',
+    url: '/case-studies/cne/',
+  },
+  {
+    id: 'aux',
+    title: 'The AUX',
+    description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.',
+    imageUrl: './images/aux/aux.jpg',
+    fit: 'cover',
+    url: '/case-studies/aux/',
+  },
+  {
+    id: 'eyc',
+    title: 'Embrace Your Crown',
+    description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.',
+    fit: 'cover',
+    color: '#f1ce71',
+    url: '/case-studies/eyc/',
+  },
+];
 
 const Projects = () => {
   return (
     <div className="panel">
       <h2 className="mb-12">Projects</h2>
       <div className="projects-grid">
-        {data.map((card, index) => (
+        {projects.map((card, index) => (
           <div key={index}>
             <HoverCard
               id={card.id}
