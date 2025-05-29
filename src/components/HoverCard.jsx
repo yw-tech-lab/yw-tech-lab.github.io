@@ -1,29 +1,34 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const HoverCard = ({ id, title, children, imageUrl, color, fit = 'contain' }) => {
+const HoverCard = ({ id, title, children, imageUrl, url, color, fit = 'contain' }) => {
+  function getImageOrTitle() {
+    if (imageUrl) {
+      return (
+        <img
+          src={imageUrl}
+          alt={title}
+          className="h-full w-full transition-transform duration-700 group-hover:scale-110"
+          style={{ objectFit: fit ? fit : 'cover' }}
+        />
+      );
+    } else {
+      return (
+        <h2 className="text-4xl font-abril text-center duration-700 group-hover:scale-110">
+          {title}
+        </h2>
+      );
+    }
+  }
   return (
-    <Link to={`/case-studies/${id}`}>
+    <Link to={url}>
       <div className="group relative overflow-hidden transition-all duration-500">
         {/* Image container with hover zoom effect */}
         <div
-          className="relative h-80 overflow-hidden flex items-center justify-center"
+          className="hover-card"
           style={color ? { backgroundColor: color, padding: '20px' } : {}}
         >
-          {imageUrl && (
-            <img
-              src={imageUrl}
-              alt={title}
-              className="h-full w-full transition-transform duration-700 group-hover:scale-110"
-              style={{ objectFit: fit ? fit : 'cover' }}
-            />
-          )}
-
-          {!imageUrl && (
-            <h2 className="text-4xl font-abril text-center duration-700 group-hover:scale-110">
-              {title}
-            </h2>
-          )}
+          {getImageOrTitle()}
         </div>
 
         {/* Content container */}

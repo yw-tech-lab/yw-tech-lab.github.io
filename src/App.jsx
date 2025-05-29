@@ -1,10 +1,12 @@
 import React, { useEffect } from 'react';
 import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
-import CaseStudyDetail from './pages/CaseStudyDetail';
+import AUX from './pages/AUX';
+import CNE from './pages/CNE';
+import EYC from './pages/EYC';
 import Home from './pages/Home';
 import CaseStudies from './pages/CaseStudies';
 import Bio from './pages/Bio';
-
+import Tips from './pages/Tips';
 // ScrollToTop component to handle scroll restoration
 function ScrollToTop() {
   const location = useLocation();
@@ -25,8 +27,11 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/bio/" element={<Bio />} />
+          <Route path="/tips/" element={<Tips />} />
           <Route path="/case-studies/" element={<CaseStudies />} />
-          <Route path="/case-studies/:id" element={<CaseStudyDetail />} />
+          <Route path="/case-studies/aux/" element={<AUX />} />
+          <Route path="/case-studies/cne/" element={<CNE />} />
+          <Route path="/case-studies/eyc/" element={<EYC />} />
         </Routes>
       </div>
     </Router>
