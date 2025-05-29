@@ -9,7 +9,7 @@ export default function AUX() {
 
       {/* Section 1 */}
       <section className="bg-[#185977]">
-        <div className="panel grid grid-cols-2">
+        <div className="panel two-column-layout">
           {/* Left column */}
           <div>
             <h2 className="mb-6 text-white">The Aux</h2>
@@ -30,7 +30,7 @@ export default function AUX() {
 
       {/* Section 2 */}
       <section className="bg-[#F0F0F0]">
-        <div className="panel grid grid-cols-2">
+        <div className="panel two-column-layout">
           {/* Left column */}
           <div>
             <h2 className="mb-6">Blah blah blah</h2>

@@ -5,9 +5,9 @@ const Bio = () => {
     <>
       <Nav />
       <section className="panel">
-        <h2>About Me</h2>
-        <div className="grid grid-cols-3 gap-4">
-          <div className="col-span-2">
+        <div className="two-column-layout">
+          <h2 className="md:col-span-2">About Me</h2>
+          <div>
             <p className="body-text">
               Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien
               vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus
@@ -24,7 +24,11 @@ const Bio = () => {
               torquent per conubia nostra inceptos himenaeos.
             </p>
           </div>
-          <div>Some image or interesting asset?</div>
+          <div className="bg-indigo-100">
+            <div className="p-16 flex justify-center items-center h-full min-h-[300px]">
+              <p>Maybe a picture here?</p>
+            </div>
+          </div>
         </div>
       </section>
     </>

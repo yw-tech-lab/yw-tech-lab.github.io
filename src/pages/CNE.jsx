@@ -10,7 +10,7 @@ export default function CNE() {
       {/* Section 1 */}
       <section className="bg-[#185977]">
         {/* Left column */}
-        <div className="panel grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="panel two-column-layout">
           <div>
             <h2 className="text-3xl font-abril mb-6 text-white">Homepage</h2>
             <p className="text-lg text-white">
@@ -36,7 +36,7 @@ export default function CNE() {
 
       {/* Section 2 */}
       <section className="bg-[#F9F9F9]">
-        <div className="panel grid grid-cols-2 gap-4">
+        <div className="panel two-column-layout">
           {/* Left column */}
           <div>
             <h2 className="text-3xl font-abril mb-6 text-gray-900">Impact</h2>

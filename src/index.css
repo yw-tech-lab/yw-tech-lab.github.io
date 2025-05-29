@@ -11,20 +11,41 @@
   h2 {
     @apply text-3xl sm:text-4xl lg:text-5xl font-abril mb-6 text-gray-900;
   }
+  ul {
+    @apply list-disc ml-10;
+  }
+  ol {
+    @apply list-decimal ml-10;
+  }
+  li {
+    @apply text-lg text-gray-900 mb-2;
+  }
+  .link-highlight {
+    @apply border-b-2 border-indigo-500;
+  }
+  .h3-underlined {
+    @apply text-xl sm:text-2xl lg:text-3xl mt-20 font-abril mb-6 text-gray-900 border-b border-indigo-500;
+  }
   .body-text {
     @apply text-lg text-gray-900 mb-6;
   }
   .body-text-large {
     @apply text-xl text-gray-900 mb-6;
   }
+  .card {
+    @apply relative overflow-hidden transition-all duration-500 mb-10 md:mb-4;
+  }
   .hover-card {
-    @apply relative h-80 overflow-hidden flex items-center justify-center;
+    @apply relative overflow-hidden flex items-center justify-center  h-80;
   }
   .projects-grid {
     @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-16;
   }
   .panel {
     @apply container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-24;
+  }
+  .two-column-layout {
+    @apply grid grid-cols-1 md:grid-cols-2 gap-4;
   }
 }
 

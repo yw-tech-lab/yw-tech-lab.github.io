@@ -5,7 +5,7 @@ import data from './data';
 const Projects = () => {
   return (
     <div className="panel">
-      <h1 className="mb-12">Projects</h1>
+      <h2 className="mb-12">Projects</h2>
       <div className="projects-grid">
         {data.map((card, index) => (
           <div key={index}>

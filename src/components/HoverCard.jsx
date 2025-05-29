@@ -22,7 +22,7 @@ const HoverCard = ({ id, title, children, imageUrl, url, color, fit = 'contain' 
   }
   return (
     <Link to={url}>
-      <div className="group relative overflow-hidden transition-all duration-500">
+      <div className="group card">
         {/* Image container with hover zoom effect */}
         <div
           className="hover-card"
