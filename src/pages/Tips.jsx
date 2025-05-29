@@ -77,6 +77,11 @@ export default function Tips() {
               React course from last winter
             </a>
           </li>
+          <li>
+            <a className="link-highlight" href="https://tailwindcss.com/plus" target="_blank">
+              Available Tailwind Components (Tailwind Plus)
+            </a>
+          </li>
         </ul>
 
         <h3 className="h3-underlined">Portfolio Materials</h3>
