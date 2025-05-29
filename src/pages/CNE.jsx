@@ -24,12 +24,8 @@ export default function CNE() {
 
           {/* Right column */}
           <div className="flex gap-5 mt-10 md:mt-0">
-            <Device width="200px" imageUrl="/images/screenshots/mobile/homepage.png" />
-            <Device
-              width="200px"
-              className="top-[-30px]"
-              imageUrl="/images/screenshots/mobile/ccap.png"
-            />
+            <Device width="200px" imageUrl="/images/cne/mobile/homepage.png" />
+            <Device width="200px" className="top-[-30px]" imageUrl="/images/cne/mobile/ccap.png" />
           </div>
         </div>
       </section>
@@ -50,11 +46,11 @@ export default function CNE() {
 
           {/* Right column */}
           <div className="flex gap-5">
-            <Device width="200px" imageUrl="/images/screenshots/mobile/impact.png" />
+            <Device width="200px" imageUrl="/images/cne/mobile/impact.png" />
             <Device
               width="200px"
               className="top-[-30px]"
-              imageUrl="/images/screenshots/mobile/programs-overview.png"
+              imageUrl="/images/cne/mobile/programs-overview.png"
             />
           </div>
         </div>
@@ -70,7 +66,7 @@ export default function CNE() {
             clear and accessible explanation of CNE's various programs, including home visits,
             developmental screenings, childcare providers and supports, and more.
           </p>
-          <img className="w-full" src="/images/screenshots/desktop/programs.png" alt="Programs" />
+          <img className="w-full" src="/images/cne/desktop/programs.png" alt="Programs" />
         </div>
       </section>
     </>

@@ -16,15 +16,15 @@ export default function Tips() {
           </li>
           <li>Turn on GitHub Pages</li>
           <li>
-            On your local computer, open the terminal and navigate to the folder where you want to
-            store your portfolio. Make a note of it.
+            On your local computer, open a brand new VS Code window. Click on the version control
+            tab on the left-hand side (it looks like a branch).
           </li>
           <li>
-            Clone your repo: <br />
-            <code>
-              git clone https://github.com/github-username/github-username.github.io portfolio
-            </code>
+            Click on the "clone repository" button. It should prompt you to log in. Pick the
+            repository you want to clone.
           </li>
+          <li>VERY CAREFULLY, select the folder where you would like to store your portfolio.</li>
+          <li>Once that's done, open your integrated terminal in VS Code</li>
           <li>
             Install the dependencies: <br />
             <code>
@@ -38,7 +38,7 @@ export default function Tips() {
             <code>npm run dev</code>
           </li>
         </ol>
-        <p>
+        <p className="body-text">
           Note that because this is a React App, you will have to navigate to your portfolio on the
           command line and run <code>npm run dev</code> in order to see your changes in the browser.
         </p>
@@ -122,6 +122,16 @@ export default function Tips() {
               practices.
             </a>
           </li>
+          <li>
+            <a
+              className="link-highlight"
+              href="https://docs.google.com/presentation/d/1f-tours2Cer9_UUTwNX6jyk17LYqbu1PUSugN0K2pxg/edit?usp=sharing"
+              target="_blank"
+            >
+              AUX Presentation to Advisory Board
+            </a>
+          </li>
+          <li>EYC Presentation to Advisory Board: I can't access this one.</li>
         </ul>
       </section>
     </>

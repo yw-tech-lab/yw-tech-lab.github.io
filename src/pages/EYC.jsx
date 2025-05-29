@@ -18,12 +18,8 @@ export default function EYC() {
 
           {/* Right column */}
           <div className="flex gap-5">
-            <Device width="200px" imageUrl="/images/screenshots/mobile/homepage.png" />
-            <Device
-              width="200px"
-              className="top-[-30px]"
-              imageUrl="/images/screenshots/mobile/ccap.png"
-            />
+            <Device width="200px" imageUrl="/images/cne/mobile/homepage.png" />
+            <Device width="200px" className="top-[-30px]" imageUrl="/images/cne/mobile/ccap.png" />
           </div>
         </div>
       </section>
@@ -39,12 +35,8 @@ export default function EYC() {
 
           {/* Right column */}
           <div className="flex gap-5">
-            <Device width="200px" imageUrl="/images/screenshots/mobile/homepage.png" />
-            <Device
-              width="200px"
-              className="top-[-30px]"
-              imageUrl="/images/screenshots/mobile/ccap.png"
-            />
+            <Device width="200px" imageUrl="/images/cne/mobile/homepage.png" />
+            <Device width="200px" className="top-[-30px]" imageUrl="/images/cne/mobile/ccap.png" />
           </div>
         </div>
       </section>

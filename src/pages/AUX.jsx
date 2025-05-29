@@ -1,5 +1,5 @@
 import React from 'react';
-import Device from '../components/Device.jsx';
+import PhoneDark from '../components/PhoneDark.jsx';
 import Nav from '../components/Nav.jsx';
 
 export default function AUX() {
@@ -18,12 +18,7 @@ export default function AUX() {
 
           {/* Right column */}
           <div className="flex gap-5">
-            <Device width="200px" imageUrl="/images/screenshots/mobile/homepage.png" />
-            <Device
-              width="200px"
-              className="top-[-30px]"
-              imageUrl="/images/screenshots/mobile/ccap.png"
-            />
+            <PhoneDark imageUrl="/images/aux/mobile/homepage.png" />
           </div>
         </div>
       </section>
@@ -38,14 +33,25 @@ export default function AUX() {
           </div>
 
           {/* Right column */}
-          <div className="flex gap-5">
-            <Device width="200px" imageUrl="/images/screenshots/mobile/homepage.png" />
-            <Device
-              width="200px"
-              className="top-[-30px]"
-              imageUrl="/images/screenshots/mobile/ccap.png"
-            />
-          </div>
+          <PhoneDark imageUrl="/images/aux/mobile/wellness.png" />
+        </div>
+      </section>
+
+      {/* Section 3 */}
+      <section style={{ backgroundImage: 'linear-gradient(90deg, #bce2f6, #e8def1)' }}>
+        <div className="panel max-w-4xl m-auto">
+          <h2 className="text-3xl font-abril mb-6 text-gray-900">Programs</h2>
+          <p className="text-lg text-gray-900 mb-12">
+            To help parents and caregivers understand the importance of early childhood education,
+            we created a simple program overview page, organized by age group. This page provides a
+            clear and accessible explanation of CNE's various programs, including home visits,
+            developmental screenings, childcare providers and supports, and more.
+          </p>
+          <img
+            className="w-full"
+            src="/images/aux/desktop/wellness.png"
+            alt="The Wellness Collective"
+          />
         </div>
       </section>
     </>
