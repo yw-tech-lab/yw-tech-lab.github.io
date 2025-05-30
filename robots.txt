@@ -1,0 +1,6 @@
+# Disallow all web crawlers
+User-agent: *
+Disallow: /
+
+# Sitemap location (uncomment and update when you have a sitemap)
+# Sitemap: https://your-domain.com/sitemap.xml 
