@@ -14,7 +14,7 @@ const projects = [
     id: 'aux',
     title: 'The AUX',
     description: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.',
-    imageUrl: './images/the-aux/aux.jpg',
+    imageUrl: './images/the-aux/the-aux.jpg',
     fit: 'cover',
     url: '/case-studies/aux/',
   },

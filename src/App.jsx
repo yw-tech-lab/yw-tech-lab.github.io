@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
-import AUX from './pages/AUX';
+import AUX from './pages/TheAux';
 import CNE from './pages/CNE';
 import EYC from './pages/EYC';
 import Home from './pages/Home';
