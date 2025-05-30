@@ -18,7 +18,7 @@ export default function AUX() {
 
           {/* Right column */}
           <div className="flex gap-5">
-            <PhoneDark imageUrl="/images/aux/mobile/homepage.png" />
+            <PhoneDark imageUrl="/images/the-aux/mobile/homepage.png" />
           </div>
         </div>
       </section>
@@ -33,7 +33,7 @@ export default function AUX() {
           </div>
 
           {/* Right column */}
-          <PhoneDark imageUrl="/images/aux/mobile/wellness.png" />
+          <PhoneDark imageUrl="/images/the-aux/mobile/wellness.png" />
         </div>
       </section>
 
@@ -49,7 +49,7 @@ export default function AUX() {
           </p>
           <img
             className="w-full"
-            src="/images/aux/desktop/wellness.png"
+            src="/images/the-aux/desktop/wellness.png"
             alt="The Wellness Collective"
           />
         </div>
