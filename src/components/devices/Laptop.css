@@ -1,0 +1,95 @@
+:root {
+  --laptop-width: 100%;
+  --laptop-height: calc(var(--laptop-width) * 0.5625);
+  --bottom-width: calc(var(--laptop-width) * 6 / 5);
+  --bottom-left-margin: calc((var(--bottom-width) / 2 - var(--laptop-width) / 2) * -1);
+  --left-margin: calc(var(--bottom-left-margin) * -1);
+  --laptop-keyboard-height: 1.7vw;
+  --laptop-border-width: 1.3vw;
+  --laptop-circle: 0.8vw;
+  --laptop-circle-margin: -1.1vw;
+}
+
+.laptop {
+  width: var(--laptop-width);
+  aspect-ratio: 15 / 8;
+  background: #e8ebf0;
+  border: var(--laptop-border-width) solid #e8ebf0;
+  border-radius: 10px 10px 0 0;
+  position: relative;
+  box-shadow:
+    0 0.5em 2em 0.2em rgba(0, 0, 0, 0.33),
+    0 0 0 0.5px #ddd inset;
+  border-bottom: 0;
+  /* margin-left: var(--left-margin); */
+  margin: auto;
+}
+
+.laptop:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: var(--laptop-circle-margin);
+  width: var(--laptop-circle);
+  height: var(--laptop-circle);
+  border-radius: 6px;
+  background: #a5adbd;
+}
+
+.laptop > div {
+  position: relative;
+}
+
+.laptop > .content {
+  height: 100%;
+  overflow: hidden;
+}
+
+.scroll-indicator {
+  position: absolute;
+  right: 3px;
+  top: 3%;
+  bottom: 0;
+  transform: none;
+  width: 8px;
+  height: 94%;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 2px;
+  z-index: 1000;
+  /* opacity: 0; */
+  /* transition: opacity 0.3s ease; */
+}
+
+.laptop .screenshot {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  user-select: none;
+  -webkit-user-drag: none;
+  touch-action: none;
+}
+
+.btm {
+  width: var(--bottom-width);
+  height: var(--laptop-keyboard-height);
+  margin-left: var(--bottom-left-margin);
+  border-radius: 0 0 20px 20px;
+  background: #f4f5f7;
+  z-index: 1;
+  box-shadow:
+    0 0.5em 2em 0.2em rgba(0, 0, 0, 0.33),
+    0 0 0 0.5px #ddd inset;
+}
+
+.desktop {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.desktop .carousel-slide {
+  flex: 0 0 calc(100% - 20vw);
+  padding: 0 10vw;
+}

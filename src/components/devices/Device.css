@@ -1,11 +1,8 @@
 .iphone,
 .ipad {
-  /* background-color: #000; */
   background-color: #e8ebf0;
-  /* border: solid #111; */
   border: solid #e8ebf0;
   position: relative;
-  /* box-shadow: 0 0.5em 2em 0.2em rgba(0, 0, 0, 0.33), 0 0 0 0.5px #DDD inset; */
   transition:
     all 0.1s linear,
     line-height 0s linear;
@@ -74,7 +71,6 @@
 .mobile .carousel-slide .phone {
   width: 100%;
   height: auto;
-  /* Maintain aspect ratio while filling width */
   max-height: 100%;
   object-fit: contain;
 }
@@ -87,11 +83,9 @@
   transform: none;
   width: 8px;
   height: 94%;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.8);
   border-radius: 2px;
   z-index: 1000;
-  opacity: 0;
-  transition: opacity 0.3s ease;
 }
 
 .scroll-handle {

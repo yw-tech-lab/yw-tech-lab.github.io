@@ -1,5 +1,5 @@
 import React from 'react';
-import PhoneDark from '../components/PhoneDark.jsx';
+import PhoneDark from '../components/devices/PhoneDark.jsx';
 import Nav from '../components/Nav.jsx';
 
 export default function AUX() {

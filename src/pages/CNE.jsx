@@ -1,5 +1,5 @@
 import React from 'react';
-import Device from '../components/Device.jsx';
+import Device from '../components/devices/Device.jsx';
 import Nav from '../components/Nav.jsx';
 
 export default function CNE() {
@@ -149,7 +149,7 @@ export default function CNE() {
       </section>
 
       {/* Section 3 */}
-      <section style={{ backgroundImage: 'linear-gradient(90deg, #bce2f6, #e8def1)' }}>
+      <section className="bg-gradient-to-r from-blue-100 via-blue-100 to-purple-100 ">
         <div className="panel max-w-4xl m-auto">
           <h2 className="text-3xl font-abril mb-6 text-gray-900">Programs</h2>
           <p className="text-lg text-gray-900 mb-12">

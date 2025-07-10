@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
+    "antd": "^5.26.1",
+    "embla-carousel-react": "^8.6.0",
     "framer-motion": "^12.10.0",
     "heroicons": "^2.2.0",
     "react": "^19.0.0",

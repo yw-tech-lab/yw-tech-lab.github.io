@@ -1,5 +1,5 @@
 import React from 'react';
-import Device from '../components/Device.jsx';
+import Device from '../components/devices/Device.jsx';
 import Nav from '../components/Nav.jsx';
 
 export default function EYC() {
