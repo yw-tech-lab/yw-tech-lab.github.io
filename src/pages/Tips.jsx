@@ -1,36 +1,15 @@
 import React from 'react';
 import Nav from '../components/Nav.jsx';
-import EmblaCarousel from '../components/carousel/Carousel.jsx';
-import CarouselSlide from '../components/carousel/CarouselSlide.jsx';
 import Laptop from '../components/devices/Laptop.jsx';
 
 export default function Tips() {
   return (
     <>
       <Nav />
-      <div className="bg-gray-100">
-        <section className="panel">
-          <Laptop width="80%" imageUrl="./images/cne/desktop/ccap.png" />
-        </section>
-      </div>
-      <section className="bg-indigo-200 p-8">
-        <EmblaCarousel>
-          <CarouselSlide className="h-[350px] p-12">
-            <Laptop imageUrl="./images/cne/desktop/ccap.png" width="60%" />
-          </CarouselSlide>
-          <CarouselSlide className="h-[350px] p-12">
-            <Laptop imageUrl="./images/cne/desktop/board.png" width="60%" />
-          </CarouselSlide>
-          <CarouselSlide className="h-[350px] p-12">
-            <Laptop imageUrl="./images/cne/desktop/headstart.png" width="60%" />
-          </CarouselSlide>
-          <CarouselSlide className="h-[350px] p-12">
-            <Laptop imageUrl="./images/cne/desktop/impact.png" width="60%" />
-          </CarouselSlide>
-        </EmblaCarousel>
-      </section>
       <section className="panel">
         <h2>Resume / Portfolio Tips</h2>
+
+        <Laptop width="80%" imageUrl="./images/cne/desktop/ccap.png" />
 
         <h3 className="h3-underlined">Installation</h3>
         <ol>

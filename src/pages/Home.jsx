@@ -1,8 +1,6 @@
 import React from 'react';
 import Projects from '../components/Projects.jsx';
 import Nav from '../components/Nav.jsx';
-import { Image } from 'antd';
-import MyDrawer from '../components/MyDrawer.jsx';
 
 export default function Home() {
   return (
@@ -16,8 +14,6 @@ export default function Home() {
           <p className="body-text-large max-w-2xl mx-auto text-center">
             Some tagline (e.g., "I bridge design and code to create intuitive digital products").
           </p>
-
-          <MyDrawer />
         </div>
       </div>
 
@@ -32,7 +28,6 @@ export default function Home() {
           aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos. Lorem
           ipsum dolor sit amet consectetur adipiscing elit.
         </p>
-        <Image width={400} src="/images/cne-child.jpg" />
       </div>
 
       <Projects />
