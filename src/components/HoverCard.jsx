@@ -8,13 +8,13 @@ const HoverCard = ({ id, title, children, imageUrl, url, color, fit = 'contain' 
         <img
           src={imageUrl}
           alt={title}
-          className="h-full w-full transition-transform duration-700 group-hover:scale-110"
+          className="h-full w-full transition-transform duration-700 group-hover:scale-110 md:aspect-square"
           style={{ objectFit: fit ? fit : 'cover' }}
         />
       );
     } else {
       return (
-        <h2 className="text-4xl font-abril text-center duration-700 group-hover:scale-110">
+        <h2 className="text-4xl font-abril text-center duration-700 group-hover:scale-110 m-0">
           {title}
         </h2>
       );
@@ -25,7 +25,7 @@ const HoverCard = ({ id, title, children, imageUrl, url, color, fit = 'contain' 
       <div className="group card">
         {/* Image container with hover zoom effect */}
         <div
-          className="hover-card"
+          className="hover-card md:aspect-square"
           style={color ? { backgroundColor: color, padding: '20px' } : {}}
         >
           {getImageOrTitle()}

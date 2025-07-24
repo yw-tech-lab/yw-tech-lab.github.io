@@ -1,6 +1,6 @@
 import React from 'react';
 import HoverCard from './HoverCard';
-
+import GridContainer from './GridContainer';
 const projects = [
   {
     id: 'cne',
@@ -28,11 +28,11 @@ const projects = [
   },
 ];
 
-const Projects = () => {
+const Projects = ({ className = 'panel', includeTitle = true, numColumns = 3 }) => {
   return (
-    <div className="panel">
-      <h2 className="mb-12">Projects</h2>
-      <div className="projects-grid">
+    <div className={className}>
+      {includeTitle && <h2 className="mb-12">Projects</h2>}
+      <GridContainer numColumns={numColumns}>
         {projects.map((card, index) => (
           <div key={index}>
             <HoverCard
@@ -55,7 +55,7 @@ const Projects = () => {
             </HoverCard>
           </div>
         ))}
-      </div>
+      </GridContainer>
     </div>
   );
 };

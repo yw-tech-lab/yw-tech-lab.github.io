@@ -8,7 +8,7 @@ export default function Home() {
       <Nav isHome={true} />
 
       {/* Top Banner */}
-      <div className="bg-background-50">
+      <div className="bg-gradient-to-r from-indigo-50 via-pink-100 to-blue-50">
         <div className="panel">
           <h1 className="text-center">Your Name</h1>
           <p className="body-text-large max-w-2xl mx-auto text-center">
